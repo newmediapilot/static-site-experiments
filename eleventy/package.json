@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "style": "gulp sass",
-    "serve": "gulp sass && npx @11ty/eleventy --serve"
+    "build": "gulp all && npx @11ty/eleventy",
+    "serve": "gulp all && npx @11ty/eleventy --serve"
   },
   "author": "",
   "license": "ISC",
