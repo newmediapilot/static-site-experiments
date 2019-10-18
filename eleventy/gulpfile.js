@@ -4,7 +4,10 @@ const cleanCss = require("gulp-clean-css");
 const sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 
-const jsInput = './src/javascript/**/*.js';
+const jsInput = [
+    // node modules here
+    './src/javascript/**/*.js'
+];
 const jsOutput = './js/';
 const scssInput = './src/scss/**/*.scss';
 const cssOutput = './css/';
