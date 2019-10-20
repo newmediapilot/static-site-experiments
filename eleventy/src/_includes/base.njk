@@ -1,5 +1,14 @@
-{%  include './includes/head.njk' %}
+
+
+
+{%  block head %}{%  include './includes/head.njk' %}{% endblock %}
+
+
+{%  block nav %}{%  include  '../components/nav.njk' %}{% endblock %}
+
 
 {% block body %}{%  include './errors/missing.njk' %}{% endblock %}
 
-{%  include './includes/foot.njk' %}
+
+{% block foot %}{%  include './includes/foot.njk' %}{% endblock %}
+
