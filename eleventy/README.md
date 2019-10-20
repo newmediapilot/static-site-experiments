@@ -1,11 +1,15 @@
 # pre-requisites
 
+## built with
+https://www.11ty.io
+
+## compile with
 ```
 npm i gulp -g
 npm i
 ```
 
-# watch
+## development
 
 ```
 gulp sass
