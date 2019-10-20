@@ -4,12 +4,17 @@ const cleanCss = require("gulp-clean-css");
 const sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 
-const jsInput = [
-    // node modules here
-    './src/javascript/**/*.js'
+const njkInput = [
+    './src/_includes/**/*.njk',
+    './src/content/**/*.njk'
 ];
+const jsInput = [
+    // vendor files here
+    './src/_scripts/javascript/**/*.js'
+];
+const scssInput = './src/_scripts/scss/**/*.scss';
+
 const jsOutput = './js/';
-const scssInput = './src/scss/**/*.scss';
 const cssOutput = './css/';
 
 gulp.task('js-concat', function () {
@@ -43,5 +48,10 @@ gulp.task('all', gulp.series('style', 'script'));
 
 gulp.task('watch', function () {
     gulp.series('all');
-    gulp.watch([scssInput, jsInput], gulp.series('all'));
+    gulp.watch(
+        [
+            jsInput,
+            scssInput,
+            njkInput
+        ], gulp.series('all'));
 });
