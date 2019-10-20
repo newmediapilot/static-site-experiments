@@ -1,0 +1,5 @@
+.idea/
+eleventy/node_modules/
+css/
+src/js/
+dist/
