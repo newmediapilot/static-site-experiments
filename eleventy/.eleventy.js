@@ -5,7 +5,12 @@ module.exports = function (eleventyConfig) {
         dir: {
             input: "./src",
             output: "./dist",
-            templateFormats: ["njk"]
+            includes: "_includes",
+            layouts: "_layouts",
+            data: "_data",
+            templateFormats: [
+                "njk"
+            ]
         }
     };
 };

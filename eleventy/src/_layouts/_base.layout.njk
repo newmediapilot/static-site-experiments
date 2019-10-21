@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    <script type="text/javascript" src="./dist/js/all.js"></script>
+    <meta type="stylesheet" src="./dist/css/style.css">
+</head>
+<body>
+{% block navbar %}
+    {%  include '../_components/nav-top.njk' %}
+{% endblock %}
+</body>
+</html>
